@@ -51,7 +51,7 @@ func TestTerraformAwsS3Example(t *testing.T) {
 	terraform.InitAndApply(t, terraformOptions)
 
 	// Run `terraform output` to get the value of an output variable
-	bucketID := terraform.Output(t, terraformOptions, "bucket_id")
+	//bucketID := terraform.Output(t, terraformOptions, "bucket_id")
 
 	// Verify that our Bucket has versioning enabled
 	actualStatus := aws.GetS3BucketVersioning(t, awsRegion, bucketID)
