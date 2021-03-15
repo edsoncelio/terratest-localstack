@@ -2,6 +2,10 @@
 
 > Work in Progress
 
+## Prerequisites
+* Go 1.15+
+* Terraform v0.13+
+
 ## How it works
 This repo will create a s3 bucket and test using the following technologies:
 * Terraform: to create the resources
@@ -9,7 +13,7 @@ This repo will create a s3 bucket and test using the following technologies:
 * Localstack: to mock the AWS resources
 
 ## Tests
-To run the tests:   
+To run the tests locally:   
 1. `cd tests`
 2. `go test -v -timeout 30m`
 
