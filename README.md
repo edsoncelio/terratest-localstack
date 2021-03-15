@@ -14,3 +14,7 @@ To run the tests:
 2. `go test -v -timeout 30m`
 
 This will create, test and destroy all the resources.
+
+## TODO
+- [ ] Finish the action to set up localstack and test
+- [ ] Add more tests
