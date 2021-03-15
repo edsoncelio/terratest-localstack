@@ -11,8 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-// An example of how to test the Terraform module in examples/terraform-aws-s3-example using Terratest.
-func TestTerraformAwsS3Example(t *testing.T) {
+func runAwsS3Localstack(t *testing.T) {
 	t.Parallel()
 
 	// Give this S3 Bucket a unique ID for a name tag so we can distinguish it from any other Buckets provisioned
