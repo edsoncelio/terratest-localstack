@@ -13,6 +13,9 @@ This repo will create a s3 bucket and test using the following technologies:
 * Localstack: to mock the AWS resources
 
 ## Tests
+
+> Warning: to run the tests locally, you need to setup [localstack](https://github.com/localstack/localstack)
+
 To run the tests locally:   
 1. `cd tests`
 2. `go test -v -timeout 30m`
