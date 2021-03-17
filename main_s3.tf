@@ -24,12 +24,6 @@ provider "aws" {
 
 module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
-
-  bucket = "s3-bucket-localstack"
-  acl    = "private"
-
-  versioning = {
-    enabled = true
-  }
-
+  bucket = var.bucket_name
+  acl = var.acl
 }
