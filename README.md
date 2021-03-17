@@ -1,4 +1,5 @@
 # Terratest with localstack
+![test build](https://github.com/edsoncelio/terratest-localstack/actions/workflows/main.yml/badge.svg)
 
 > Work in Progress
 
