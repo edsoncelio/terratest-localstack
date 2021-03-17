@@ -23,5 +23,6 @@ To run the tests locally:
 This will create, test and destroy all the resources.
 
 ## TODO
-- [ ] Finish the action to set up localstack and test
+- [x] Finish the action to set up localstack and test
 - [ ] Add more tests
+- [ ] Remove hardcored aws region test
