@@ -20,7 +20,7 @@ provider "aws" {
 }
 
 module "s3_bucket" {
-  source = "git@github.com:marcelomansur/iac-modulo-s3.git?ref=testing"
+  source = "github.com:marcelomansur/iac-modulo-s3.git?ref=testing"
   bucket_name = var.bucket_name
   acl = var.acl
 }
