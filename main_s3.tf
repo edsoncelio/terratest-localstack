@@ -20,7 +20,7 @@ provider "aws" {
 }
 
 module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
-  bucket = var.bucket_name
+  source = "git@github.com:marcelomansur/iac-modulo-s3.git?ref=testing"
+  bucket_name = var.bucket_name
   acl = var.acl
 }
