@@ -17,7 +17,7 @@ func runAwsS3Localstack(t *testing.T) {
 	expectedName := fmt.Sprintf("s3-bucket-localstack-%s", strings.ToLower(random.UniqueId()))
 
 	// Pick a random AWS region to test in. This helps ensure your code works in all regions.
-	//awsRegion := aws.GetRandomStableRegion(t, nil, nil)
+	awsRegion := aws.GetRandomStableRegion(t, nil, nil)
 
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
 		TerraformDir: "../",
