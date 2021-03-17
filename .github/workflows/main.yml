@@ -21,9 +21,9 @@ jobs:
           - 4569:4569
     steps:
       - uses: actions/checkout@v2
-      - name: Install unzip and python
+      - name: Install dependencies
         run: |
-          apt update && apt install git unzip python python3 curl build-essential -y
+          apt update && apt install git curl build-essential -y
       - name: Install node
         run: |
           curl -fsSL https://deb.nodesource.com/setup_15.x | bash
